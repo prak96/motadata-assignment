@@ -78,4 +78,26 @@ PASTED THE ARTIFACTS as well.
 
 
 
+POST CALL ACTIVITY
+
+I performed to keep doing the PIPELINING stuff.
+
+Since in my previous activity I didn't achieve my desired DEMO OUPTUT (Automating VM Entities through SHELL script to Azure Ubuntu 24.04). This is because of an ongoing issue with my Azure Account, where my Azure DevOps project was not recognising my Azure Subscription as described above with Screenshot provided. I having been working to resolve the Azure Account problem Microsoft Support people for this.
+
+I was bit in hurry as I had to rush to my WORK PLACE! Therefore, didn't get much time to think about it. Nonetheless, I came up with an alternate idea.
+
+NOTE: I COULD HAVE GIVEN UP ON THIS! BUT MY ULTIMATE GOAL IS TO EXECUTE MY OUTPUT WHATEVER IT TAKES! IRRESPECTIVE OF ANY RESULTS PERFOMED!!👊
+
+ So instead of relying on "Service Connection" with Azure Account. I performed my tasks using Public IP of VM attached and ensuring port:22 (SSH) is enabled via NSG.
+
+I uploaded the Private Key to Azure DevOps --> Project --> Pipleline --> Library.
+
+ Using 'curl' to download & copy the SCRIPT file to Ubuntu VM hsted iver Azure!!
+
+ And rest giving PERMISSION to File & EXECUTE it!!
+
+
+ I have attached all the ITERATIONS in the form of screenshots with labelled (wherever needed) & also OUTPUT as well.
+
+
 
