@@ -22,7 +22,7 @@ stages:
       
     - script: |
         chmod 600 $(Ubuntukey.secureFilePath)
-        ssh -o StrictHostKeyChecking=no -i $(Ubuntukey.secureFile) pratul@20.39.48.127 -p << EOF
+        ssh -o StrictHostKeyChecking=no -i $(Ubuntukey.secureFile) pratul@20.39.48.127 << EOF
 
         echo ">>> Connected to VM. Setting script permission..."
 
