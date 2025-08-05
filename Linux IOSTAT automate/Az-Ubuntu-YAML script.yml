@@ -16,6 +16,7 @@ stages:
 
     steps:
     - task: DownloadSecureFile@1
+      displayName: 'SSH to VM'
       name: Ubuntukey
       inputs:
         secureFile: AzUbuntu-key.pem
