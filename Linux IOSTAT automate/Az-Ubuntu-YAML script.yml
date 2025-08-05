@@ -12,7 +12,8 @@ stages:
   jobs:
   - job: connectToVM
     displayName: 'SSH to VM using key and run diagnostics'
-
+    pool:
+      vmImage: 'ubuntu-latest'
 
     steps:
     - task: DownloadSecureFile@1
