@@ -1,0 +1,113 @@
+2025-08-05T19:54:45.4288596Z ##[section]Starting: Secure SSH conenction to UbuntuVM & executed the SCRIPT
+2025-08-05T19:54:45.4296877Z ==============================================================================
+2025-08-05T19:54:45.4297427Z Task         : Command line
+2025-08-05T19:54:45.4297907Z Description  : Run a command line script using Bash on Linux and macOS and cmd.exe on Windows
+2025-08-05T19:54:45.4298491Z Version      : 2.250.1
+2025-08-05T19:54:45.4298837Z Author       : Microsoft Corporation
+2025-08-05T19:54:45.4299560Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line
+2025-08-05T19:54:45.4300245Z ==============================================================================
+2025-08-05T19:54:45.5719919Z Generating script.
+2025-08-05T19:54:45.5727973Z ========================== Starting Command Output ===========================
+2025-08-05T19:54:45.5741757Z [command]/usr/bin/bash --noprofile --norc /home/vsts/work/_temp/46965a7a-0806-47d7-b1cf-4ea4a13c3070.sh
+2025-08-05T19:54:45.6884695Z Pseudo-terminal will not be allocated because stdin is not a terminal.
+2025-08-05T19:54:46.6504532Z Warning: Permanently added '172.191.228.28' (ED25519) to the list of known hosts.
+2025-08-05T19:54:48.4750518Z Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.11.0-1018-azure x86_64)
+2025-08-05T19:54:48.4752760Z 
+2025-08-05T19:54:48.4753284Z  * Documentation:  https://help.ubuntu.com
+2025-08-05T19:54:48.4753958Z  * Management:     https://landscape.canonical.com
+2025-08-05T19:54:48.4754385Z  * Support:        https://ubuntu.com/pro
+2025-08-05T19:54:48.4754533Z 
+2025-08-05T19:54:48.4755081Z  System information as of Tue Aug  5 19:54:47 UTC 2025
+2025-08-05T19:54:48.4755806Z 
+2025-08-05T19:54:48.4756116Z   System load:  0.08              Processes:             135
+2025-08-05T19:54:48.4756448Z   Usage of /:   6.6% of 28.02GB   Users logged in:       1
+2025-08-05T19:54:48.4756825Z   Memory usage: 4%                IPv4 address for eth0: 10.0.0.4
+2025-08-05T19:54:48.4757266Z   Swap usage:   0%
+2025-08-05T19:54:48.4757412Z 
+2025-08-05T19:54:48.4757582Z 
+2025-08-05T19:54:48.4757899Z Expanded Security Maintenance for Applications is not enabled.
+2025-08-05T19:54:48.4758052Z 
+2025-08-05T19:54:48.4758367Z 0 updates can be applied immediately.
+2025-08-05T19:54:48.4758493Z 
+2025-08-05T19:54:48.4759126Z Enable ESM Apps to receive additional future security updates.
+2025-08-05T19:54:48.4759616Z See https://ubuntu.com/esm or run: sudo pro status
+2025-08-05T19:54:48.4759840Z 
+2025-08-05T19:54:48.4759969Z 
+2025-08-05T19:54:48.6930757Z >>> Conenction successful
+2025-08-05T19:54:48.6932138Z >>> Updating & Upgrading of Ubuntu VM
+2025-08-05T19:54:48.7217434Z 
+2025-08-05T19:54:48.7219240Z WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+2025-08-05T19:54:48.7219546Z 
+2025-08-05T19:54:48.8270387Z Hit:1 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2025-08-05T19:54:48.8271635Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease
+2025-08-05T19:54:48.8272456Z Hit:3 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease
+2025-08-05T19:54:48.8273021Z Hit:4 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease
+2025-08-05T19:54:48.9005976Z Hit:5 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+2025-08-05T19:54:50.4927449Z Reading package lists...
+2025-08-05T19:54:50.6980571Z Building dependency tree...
+2025-08-05T19:54:50.6983230Z Reading state information...
+2025-08-05T19:54:50.7184007Z 3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+2025-08-05T19:54:50.7402419Z 
+2025-08-05T19:54:50.7403602Z WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+2025-08-05T19:54:50.7404984Z 
+2025-08-05T19:54:50.7569963Z Reading package lists...
+2025-08-05T19:54:50.9781790Z Building dependency tree...
+2025-08-05T19:54:50.9785585Z Reading state information...
+2025-08-05T19:54:51.0910066Z Calculating upgrade...
+2025-08-05T19:54:51.2822702Z The following upgrades have been deferred due to phasing:
+2025-08-05T19:54:51.2825113Z   python-apt-common python3-apt snapd
+2025-08-05T19:54:51.2975536Z 0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+2025-08-05T19:54:51.3180035Z >>> Downloading diagnose_usage.sh from GitHub...
+2025-08-05T19:54:51.3244687Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2025-08-05T19:54:51.3245211Z                                  Dload  Upload   Total   Spent    Left  Speed
+2025-08-05T19:54:51.3245423Z 
+2025-08-05T19:54:51.4260548Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2025-08-05T19:54:51.4262428Z 100   591  100   591    0     0   5824      0 --:--:-- --:--:-- --:--:--  5851
+2025-08-05T19:54:51.4286397Z >>> Setting script permission...
+2025-08-05T19:54:51.4299237Z >>> Running diagnose_usage.sh...
+2025-08-05T19:54:51.4313803Z === High Usage Diagnostic Report ===
+2025-08-05T19:54:51.4323787Z [+] Hostname: motadata-ubuntuVM
+2025-08-05T19:54:51.4336655Z [+] Time: Tue Aug  5 19:54:51 UTC 2025
+2025-08-05T19:54:51.4337115Z 
+2025-08-05T19:54:51.4339917Z [CPU Usage:]
+2025-08-05T19:54:51.6455344Z %Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+2025-08-05T19:54:51.6456629Z [Top CPU-Consuming Processes:]
+2025-08-05T19:54:51.6530431Z     PID    PPID CMD                         %MEM %CPU
+2025-08-05T19:54:51.6534580Z    6758       1 /usr/libexec/packagekitd     0.2  0.4
+2025-08-05T19:54:51.6535294Z    6440    1133 sshd: pratul [priv]          0.1  0.1
+2025-08-05T19:54:51.6535803Z       1       0 /sbin/init                   0.1  0.1
+2025-08-05T19:54:51.6536302Z    1018     806 /usr/bin/python3 -u bin/WAL  0.4  0.1
+2025-08-05T19:54:51.6537159Z     100       2 [kworker/0:2-events]         0.0  0.1
+2025-08-05T19:54:51.6537723Z    2672       1 /usr/libexec/fwupd/fwupd     0.5  0.0
+2025-08-05T19:54:51.6538072Z      70       2 [kworker/u8:4-events_power_  0.0  0.0
+2025-08-05T19:54:51.6538499Z     889       1 /usr/sbin/chronyd -F 1       0.0  0.0
+2025-08-05T19:54:51.6539168Z      60       2 [hwrng]                      0.0  0.0
+2025-08-05T19:54:51.6539566Z [Memory Usage:]
+2025-08-05T19:54:51.6552771Z                total        used        free      shared  buff/cache   available
+2025-08-05T19:54:51.6553300Z Mem:            7893         550        6909           4         686        7342
+2025-08-05T19:54:51.6553678Z Swap:              0           0           0
+2025-08-05T19:54:51.6556890Z [Disk Usage:]
+2025-08-05T19:54:51.6573331Z Filesystem     Type      Size  Used Avail Use% Mounted on
+2025-08-05T19:54:51.6575324Z /dev/root      ext4       29G  1.9G   27G   7% /
+2025-08-05T19:54:51.6576012Z efivarfs       efivarfs  128K   37K   87K  30% /sys/firmware/efi/efivars
+2025-08-05T19:54:51.6576950Z /dev/sda16     ext4      881M   60M  760M   8% /boot
+2025-08-05T19:54:51.6577829Z /dev/sda15     vfat      105M  6.2M   99M   6% /boot/efi
+2025-08-05T19:54:51.6578186Z /dev/sdb1      ext4       16G   28K   15G   1% /mnt
+2025-08-05T19:54:51.6578623Z [Inode Usage:]
+2025-08-05T19:54:51.6585201Z Filesystem      Inodes IUsed   IFree IUse% Mounted on
+2025-08-05T19:54:51.6587281Z /dev/root      3801088 78649 3722439    3% /
+2025-08-05T19:54:51.6588384Z tmpfs          1010366     1 1010365    1% /dev/shm
+2025-08-05T19:54:51.6591042Z tmpfs           819200   781  818419    1% /run
+2025-08-05T19:54:51.6591435Z tmpfs          1010366     3 1010363    1% /run/lock
+2025-08-05T19:54:51.6591761Z efivarfs             0     0       0     - /sys/firmware/efi/efivars
+2025-08-05T19:54:51.6592304Z /dev/sda16       58496   600   57896    2% /boot
+2025-08-05T19:54:51.6592642Z /dev/sda15           0     0       0     - /boot/efi
+2025-08-05T19:54:51.6592970Z /dev/sdb1      1048576    12 1048564    1% /mnt
+2025-08-05T19:54:51.6593311Z tmpfs           202073    32  202041    1% /run/user/1000
+2025-08-05T19:54:51.6593631Z [I/O Wait / Load Average:]
+2025-08-05T19:54:51.6604043Z  19:54:51 up 29 min,  2 users,  load average: 0.08, 0.03, 0.01
+2025-08-05T19:54:51.6608066Z [Zombie Processes:]
+2025-08-05T19:54:51.6692438Z [Dmesg Errors:]
+2025-08-05T19:54:51.6707033Z dmesg: read kernel buffer failed: Operation not permitted
+2025-08-05T19:54:51.6738339Z 
+2025-08-05T19:54:51.6800752Z ##[section]Finishing: Secure SSH conenction to UbuntuVM & executed the SCRIPT
