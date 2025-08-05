@@ -65,7 +65,7 @@ This is my approach to part of the problem scenario stated!
 Mostly I will go with this roadmap irrespective the tools i use (For example: I will use YAML is some case than Ansible vice versa).
 
 LAB:
-I also did try implementing the automate SystemStat for LINUX VM through CICD using YAML & Shell scripts. But to error in my Azure account unable to link the services to deploy & execute my script.
+I also did try implementing the automate SystemStat for LINUX VM through Multibranching GIT CICD Pipelining using YAML & Shell scripts. But to error in my Azure account unable to link the services to deploy & execute my script.
 
 Therefore I pasted the artifacts of error. 
 
