@@ -6,25 +6,25 @@
             "value": "god243"
         },
        "location": {
-           "value": "westus"
+           "value": "eastus"
         },
         "publicIPName":{
-            "value": "westus-ip"
+            "value": "eastus-ip"
         },
         "publicIPAllocationMethod": {
             "value": "Static"
         },
         "NSGname":{
-            "value": "westus-nsg"
+            "value": "eastus-nsg"
         },
         "vnetName":{
-            "value": "westus-vnet"
+            "value": "eastus-vnet"
         },
         "subnetName":{
             "value": "primary-subnet"
         },
         "nicName":{
-            "value": "westus-vmnic"
+            "value": "eastus-vmnic"
         },
         "vmName1": {
             "value": "eastasia-vm1" 
@@ -38,9 +38,7 @@
         "vmSize": {
             "value": "Standard_DS2_v2"
         },
-        "OSVersion": {
-            "value": "2022-datacenter-azure-edition"
-        },
+
         "securityType": {
             "value": "TrustedLaunch"
         }
