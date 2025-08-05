@@ -1,0 +1,49 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "storageName":{
+            "value": "god243"
+        },
+       "location": {
+           "value": "westus"
+        },
+        "publicIPName":{
+            "value": "westus-ip"
+        },
+        "publicIPAllocationMethod": {
+            "value": "Static"
+        },
+        "NSGname":{
+            "value": "westus-nsg"
+        },
+        "vnetName":{
+            "value": "westus-vnet"
+        },
+        "subnetName":{
+            "value": "primary-subnet"
+        },
+        "nicName":{
+            "value": "westus-vmnic"
+        },
+        "vmName1": {
+            "value": "eastasia-vm1" 
+        },
+        "adminUsername": {
+            "value": "pratul"
+        },
+        "adminPassword": {
+            "value": "coforge@1234"
+        },
+        "vmSize": {
+            "value": "Standard_DS2_v2"
+        },
+        "OSVersion": {
+            "value": "2022-datacenter-azure-edition"
+        },
+        "securityType": {
+            "value": "TrustedLaunch"
+        }
+
+    }
+}
