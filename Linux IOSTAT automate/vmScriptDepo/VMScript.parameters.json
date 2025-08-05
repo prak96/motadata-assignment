@@ -1,0 +1,47 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "storageName":{
+            "value": "god243"
+        },
+       "location": {
+           "value": "eastus"
+        },
+        "publicIPName":{
+            "value": "eastus-ip"
+        },
+        "publicIPAllocationMethod": {
+            "value": "Static"
+        },
+        "NSGname":{
+            "value": "eastus-nsg"
+        },
+        "vnetName":{
+            "value": "eastus-vnet"
+        },
+        "subnetName":{
+            "value": "primary-subnet"
+        },
+        "nicName":{
+            "value": "eastus-vmnic"
+        },
+        "vmName1": {
+            "value": "eastasia-vm1" 
+        },
+        "adminUsername": {
+            "value": "pratul"
+        },
+        "adminPassword": {
+            "value": "coforge@1234"
+        },
+        "vmSize": {
+            "value": "Standard_DS2_v2"
+        },
+
+        "securityType": {
+            "value": "TrustedLaunch"
+        }
+
+    }
+}

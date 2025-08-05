@@ -1,0 +1,23 @@
+# ARM Deploy
+
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+    - main
+    
+steps:
+
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Lifeline233-SP'
+    subscriptionId: '436f92e2-6b30-4307-a390-a64596abd106'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'pratul233'
+    location: 'East Asia'
+    templateLocation: 'Linked artifact'
+    deploymentMode: 'Incremental'
+    csmFile: 'VMScript.json'
+    csmParametersFile: 'VMScript.parameters.json'
