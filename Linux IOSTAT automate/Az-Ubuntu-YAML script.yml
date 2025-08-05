@@ -31,7 +31,7 @@ stages:
         sudo apt update -y && sudo apt upgrade -y
 
         echo ">>> Downloading diagnose_usage.sh from GitHub..."
-        curl -o ~/diagnose_usage.sh https://raw.githubusercontent.com/prak96/motadata-assignment/blob/release/hotfix/Linux%20IOSTAT%20automate/diagnose_usage.sh
+        curl -o ~/diagnose_usage.sh "https://raw.githubusercontent.com/prak96/motadata-assignment/release/hotfix/Linux%20IOSTAT%20automate/diagnose_usage.sh"
         
         echo ">>> Setting script permission..."
         chmod +x ~/diagnose_usage.sh
@@ -40,5 +40,5 @@ stages:
         bash ~/diagnose_usage.sh
 
         EOF
-      displayName: "Secure SSH conenction to UbuntuVM & execute the SCRIPT"
+      displayName: "Secure SSH conenction to UbuntuVM & executed the SCRIPT"
 
