@@ -24,7 +24,7 @@ stages:
       
     - script: |
         chmod 600 $(Ubuntukey.secureFilePath)
-        ssh -o StrictHostKeyChecking=no -i $(Ubuntukey.secureFilePath) -o GSSAPIAuthentication=no pratul@172.191.228.28
+        ssh -o StrictHostKeyChecking=no -i $(Ubuntukey.secureFilePath) -o GSSAPIAuthentication=no pratul@172.191.228.28 << 'EOF'
         echo ">>> Conenction successful"
         sudo apt update && sudo apt upgrade -y -p
         echo ">>> Downloading diagnose_usage.sh from GitHub..."
