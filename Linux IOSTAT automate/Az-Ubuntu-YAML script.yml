@@ -12,8 +12,7 @@ stages:
   jobs:
   - job: connectToVM
     displayName: 'SSH to VM using key and run diagnostics'
-    pool:
-      vmImage: 'ubuntu-latest'
+
 
     steps:
     - task: DownloadSecureFile@1
@@ -26,4 +25,4 @@ stages:
         ssh -o StrictHostKeyChecking=no -i $(Ubuntukey.secureFile) pratul@20.39.48.127 -p << EOF
 
         echo ">>> Connected to VM. Setting script permission..."
-        
+
