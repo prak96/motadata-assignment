@@ -16,43 +16,14 @@ stages:
       vmImage: 'ubuntu-latest'
 
     steps:
-    - task: AzureCLI@2
-      displayName: 'Copy and Execute diagnose_usage.sh on Linux VM'
+    - task: DownloadSecureFile@1
+      name: Ubuntukey
       inputs:
-        azureSubscription: 'Pay-As-You-Go(52ebb814-d1d8-427b-badb-92e9e2108392)'
-        scriptType: 'bash'
-        scriptLocation: 'inlineScript'
-        inlineScript: |
-          # Define variables
-          VM_IP='20.39.48.127'
-          USERNAME='pratul'
-          SSH_KEY_PATH='/azagent/revisit-linuxVM_key.pem'
-          ls -l $SSH_KEY_PATH
-          scp -i $SSH_KEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null  $USERNAME@$VM_IP:/home/$USERNAME/deploy/
-          SSH_KEY_PATH='/azagent/revisit-linuxVM_key.pem'
+        secureFile: AzUbuntu-key.pem
+      
+    - script: |
+        chmod 600 $(Ubuntukey.secureFile) -p
+        ssh -o StrictHostKeyChecking=no -i $(Ubuntukey.secureFile) pratul@20.39.48.127 -p << EOF
 
-          echo ">>> Creating diagnose_usage.sh script"
-          cat << 'EOF' > diagnose_usage.sh
-          #!/bin/bash
-          echo "===== CPU Usage ====="
-          top -b -n1 | head -20
-          echo ""
-          echo "===== Memory Usage ====="
-          free -h
-
-          echo ""
-          echo "===== Disk Usage ====="
-          df -h
-
-          echo ""
-          echo "===== Top Processes ====="
-          ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
-          EOF
-
-          chmod +x diagnose_usage.sh
-
-          echo ">>> Copying script to VM"
-          scp -i "$SSH_KEY_PATH" -o StrictHostKeyChecking=no diagnose_usage.sh $USERNAME@$VM_IP:/tmp/
-
-          echo ">>> Executing script on VM"
-          ssh -i "$SSH_KEY_PATH" -o StrictHostKeyChecking=no $USERNAME@$VM_IP 'bash /tmp/diagnose_usage.sh > /tmp/usage_report.log && cat /tmp/usage_report.log'
+        echo ">>> Connected to VM. Setting script permission..."
+        
