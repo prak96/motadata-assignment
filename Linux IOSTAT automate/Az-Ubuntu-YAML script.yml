@@ -16,14 +16,18 @@ stages:
 
     steps:
     - task: DownloadSecureFile@1
-      displayName: 'SSH to VM'
+      displayName: 'Download SSH keys from Az Devops SecureFile'
       name: Ubuntukey
       inputs:
         secureFile: AzUbuntu-key.pem
       
     - script: |
         chmod 600 $(Ubuntukey.secureFilePath)
-        ssh -o StrictHostKeyChecking=no -i $(Ubuntukey.secureFile) pratul@20.39.48.127 << EOF
+        ssh -o StrictHostKeyChecking=no -i $(Ubuntukey.secureFilePath) pratul@20.39.48.127
+        echo ">>> Conenction successful"
 
         echo ">>> Connected to VM. Setting script permission..."
+
+        EOF
+      displayName: "Secure SSH conenction to UbuntuVM"
 
