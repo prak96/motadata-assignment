@@ -59,6 +59,23 @@ Sol.
 
 
 
+MY ANALYSIS:
+This is my approach to part of the problem scenario stated!
+
+Mostly I will go with this roadmap irrespective the tools i use (For example: I will use YAML is some case than Ansible vice versa).
+
+LAB:
+I also did try implementing the automate SystemStat for LINUX VM through CICD using YAML & Shell scripts. But to error in my Azure account unable to link the services to deploy & execute my script.
+
+Therefore I pasted the artifacts of error. 
+
+I already have implemented this and weel aquainted with having good hands on experience, using it in my work place too. 
+
+OUTPUT:
+Irrespecive to all, this I ran the Shell script to generate monitoring stat of my LINUX VM (CPU, MEMORY, Drives etc..) by giving Execute Permission. 
+PASTED THE ARTIFACTS as well.
+
+
 
 
 
