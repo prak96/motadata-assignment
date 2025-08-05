@@ -26,7 +26,7 @@ stages:
         chmod 600 $(Ubuntukey.secureFilePath)
         ssh -o StrictHostKeyChecking=no -i $(Ubuntukey.secureFilePath) -o GSSAPIAuthentication=no pratul@20.39.48.127
         echo ">>> Conenction successful"
-
+        sudo apt update && sudo apt upgrade -y -p
         echo ">>> Downloading diagnose_usage.sh from GitHub..."
         curl -o ~/diagnose_usage.sh https://github.com/prak96/motadata-assignment/blob/release/hotfix/Linux%20IOSTAT%20automate/diagnose_usage.sh
         
