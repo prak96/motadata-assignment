@@ -23,7 +23,7 @@ stages:
       
     - script: |
         chmod 600 $(Ubuntukey.secureFilePath)
-        ssh -o StrictHostKeyChecking=no -o UseDNS=no -o GSSAPIAuthentication=no -i $(Ubuntukey.secureFilePath) pratul@20.39.48.127
+        ssh -o StrictHostKeyChecking=no -i $(Ubuntukey.secureFilePath) -o GSSAPIAuthentication=no pratul@20.39.48.127
         echo ">>> Conenction successful"
 
         echo ">>> Downloading diagnose_usage.sh from GitHub..."
