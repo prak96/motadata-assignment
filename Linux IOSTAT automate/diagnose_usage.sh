@@ -30,4 +30,4 @@ echo "[Zombie Processes:]"
 ps aux | awk '{ if ($8 == "Z") print $0; }'
 
 echo "[Dmesg Errors:]"
-dmesg | tail -20
+sudo dmesg | tail -20
