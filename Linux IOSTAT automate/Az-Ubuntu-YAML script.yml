@@ -30,6 +30,9 @@ stages:
         echo ">>> Updating & Upgrading of Ubuntu VM"
         sudo apt update -y && sudo apt upgrade -y
 
+        echo ">>> Deleting the existing SCRIPT Files"
+        sudo rm -rf ~/diagnose_usage.sh 
+
         echo ">>> Downloading diagnose_usage.sh from GitHub..."
         curl -o ~/diagnose_usage.sh "https://raw.githubusercontent.com/prak96/motadata-assignment/release/hotfix/Linux%20IOSTAT%20automate/diagnose_usage.sh"
         
